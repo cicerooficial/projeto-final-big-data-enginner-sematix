@@ -54,6 +54,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 ### Objetivos
 
 - ✅Preparando o ambiente
+- ✅
 - ✅Enviar os dados para o hdfs
 - ⬜Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
 - ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
@@ -99,9 +100,10 @@ git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark
 ls
 ```
 
-Baixe as imagens: 
+Entra na pasta spark e baixe as imagens: 
 
 ```shell
+cd projeto-final-spark/spark
 docker-compose -f docker-compose-parcial.yml pull
 
 #Verifique se as imagens estão sendo listadas
@@ -116,10 +118,16 @@ No WSL2, baixe o arquivo de dados .rar dentro da pasta spark:
 curl -O https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
 ```
 
-Entre na pasta spark e inicie todos os serviços:
+Instale o unrar para descompactar o arquivo .rar 
 
 ```shell
-cd projeto-final-spark/spark
+sudo apt install unrar
+unrar x <nome do arquivo>.rar
+```
+
+Inicie todos os serviços:
+
+```shell
 docker-compose -f docker-compose-parcial.yml up -d
 ```
 
@@ -133,7 +141,7 @@ docker exec -it namenode bash
 hdfs dfs -mkdir -p /user/cicero/projeto-final-spark
 
 #Envie o arquivo de dados .rar para a pasta projeto-final-spark no HDFS
-hdfs dfs -mkdir -p /user/cicero/projeto-final-spark/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /user/cicero/projeto-final-spark
+hdfs dfs -put /user/cicero/projeto-final-spark/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /user/cicero/projeto-final-spark
 
 #Confirme se o arquivo foi enviado
 hdfs dfs -ls /user/cicero/projeto-final-spark
