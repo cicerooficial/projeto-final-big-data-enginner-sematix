@@ -72,12 +72,6 @@ Verifique se as imagens estão sendo listadas:
 docker image ls
 ```
 
-Inicie todos os serviços:
-
-```shell
-docker-compose -f docker-compose-completo.yml up -d
-```
-
 ## Nível básico
 
 - Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
@@ -97,7 +91,13 @@ docker-compose -f docker-compose-completo.yml up -d
 
 ### Como rodar a aplicação
 
-[Inserir link da pasta do projeto Nível Básico]
+Inicie todos os serviços:
+
+```shell
+docker-compose -f docker-compose-completo.yml up -d
+```
+
+
 
 ## Nível avançado
 
