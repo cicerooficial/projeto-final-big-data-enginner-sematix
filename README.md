@@ -42,7 +42,7 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 - Download WSL 2:
   - https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-No WSL2, crie um diretório
+No WSL2, crie um diretório para o projeto
 
 ```shell
 mkdir projeto-final-spark
@@ -72,6 +72,8 @@ Verifique se as imagens estão sendo listadas:
 docker image ls
 ```
 
+------
+
 ## Nível básico
 
 - Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
@@ -79,9 +81,10 @@ docker image ls
   - Site: https://covid.saude.gov.br/
   - Guia do Site: Painel Geral
 
-### Funcionalidades
+### Objetivos
 
 - [ ] Enviar os dados para o hdfs
+
 - [ ] Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
 - [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS ![](C:\Users\cicer\AppData\Roaming\Typora\typora-user-images\image-20211108112114095.png)
 - [ ] Salvar a primeira visualização como tabela Hive
@@ -89,15 +92,32 @@ docker image ls
 - [ ] Salvar a terceira visualização em um tópico no Kafka
 - [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS: ![](C:\Users\cicer\AppData\Roaming\Typora\typora-user-images\image-20211108112158105.png)
 
-### Como rodar a aplicação
+### Passo a passo 
 
-Inicie todos os serviços:
+Em seu computador, baixe o arquivo de dados .rar através do link https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar.
+
+Se estiver no Windows. No WSL2, copie o arquivo de dados .rar para o linux através do comando cp
 
 ```shell
-docker-compose -f docker-compose-completo.yml up -d
+cp /mnt/c/Users/<usuário>/Downloads/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /home/<usuário>/projeto-final-spark/spark/
+```
+
+Entre na pasta spark e inicie todos os serviços:
+
+```
+cd projeto-final-spark/spark
+docker-compose -f docker-compose-parcial.yml up -d
+```
+
+Enviar os dados para o hdfs
+
+```
+
 ```
 
 
+
+------
 
 ## Nível avançado
 
@@ -113,11 +133,11 @@ docker-compose -f docker-compose-completo.yml up -d
   - Instalar Dependências:
     https://www.elastic.co/guide/en/elasticsearch/hadoop/current/install.html
 
-### Funcionalidades
+### Objetivo
 
 - [ ] Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic.
 
-### Como rodar a aplicação
+### Passo a passo
 
 [Inserir link da pasta do projeto Nível Avançado]
 
