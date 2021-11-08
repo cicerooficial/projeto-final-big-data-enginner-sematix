@@ -16,12 +16,13 @@
 - [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
   - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
-  - [Otimizar todos os dados do hdfs para uma tabela Hive particionada por município]()
-  - [Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS]()
-  - [Salvar a primeira visualização como tabela Hive]()
-  - [Salvar a segunda visualização com formato parquet e compressão snappy]()
-  - [Salvar a terceira visualização em um tópico no Kafka]()
-  - [Criar a visualização pelo Spark com os dados enviados para o HDFS]()
+  - [Enviar os dados para o hdfs](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
+  - [Otimizar todos os dados do hdfs para uma tabela Hive particionada por município](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#otimizar-todos-os-dados-do-hdfs-para-uma-tabela-hive-particionada-por-munic%C3%ADpio)
+  - [Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#criar-as-3-vizualiza%C3%A7%C3%B5es-pelo-spark-com-os-dados-enviados-para-o-hdfs)
+  - [Salvar a primeira visualização como tabela Hive](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#salvar-a-primeira-visualiza%C3%A7%C3%A3o-como-tabela-hive)
+  - [Salvar a segunda visualização com formato parquet e compressão snappy](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#salvar-a-segunda-visualiza%C3%A7%C3%A3o-com-formato-parquet-e-compress%C3%A3o-snappy)
+  - [Salvar a terceira visualização em um tópico no Kafka](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#salvar-a-terceira-visualiza%C3%A7%C3%A3o-em-um-t%C3%B3pico-no-kafka)
+  - [Criar a visualização pelo Spark com os dados enviados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#criar-a-visualiza%C3%A7%C3%A3o-pelo-spark-com-os-dados-enviados-para-o-hdfs)
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
   - [Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic]()
 
@@ -173,5 +174,5 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 ### Passo a passo
 
-[Inserir link da pasta do projeto Nível Avançado]
+Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic
 
