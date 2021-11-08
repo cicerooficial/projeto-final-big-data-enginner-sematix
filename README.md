@@ -24,7 +24,7 @@
   - [Salvar a terceira visualização em um tópico no Kafka](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#salvar-a-terceira-visualiza%C3%A7%C3%A3o-em-um-t%C3%B3pico-no-kafka)
   - [Criar a visualização pelo Spark com os dados enviados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#criar-a-visualiza%C3%A7%C3%A3o-pelo-spark-com-os-dados-enviados-para-o-hdfs)
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
-  - [Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic]()
+  - [Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#replicar-as-visualiza%C3%A7%C3%B5es-do-site-httpscovidsaudegovbr-por%C3%A9m-acessando-diretamente-a-api-de-elastic)
 
 ## Pré-requisitos
 
