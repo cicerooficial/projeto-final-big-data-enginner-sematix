@@ -44,27 +44,39 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 No WSL2, crie um diretório
 
-`mkdir projeto-final-spark`
+```shell
+mkdir projeto-final-spark
+```
 
 Acesse o diretório
 
-`cd projeto-final-spark`
+```shell
+cd projeto-final-spark
+```
 
 No terminal, clone o projeto: 
 
-`git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark`
+``` shell
+git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark
+```
 
 Baixe as imagens: 
 
-`docker-compose -f docker-compose-parcial.yml pull`
+``` shell
+docker-compose -f docker-compose-parcial.yml pull
+```
 
 Verifique se as imagens estão sendo listadas: 
 
-`docker image ls`
+```shell
+docker image ls
+```
 
 Inicie todos os serviços:
 
-`docker-compose -f docker-compose-completo.yml up -d`
+```shell
+docker-compose -f docker-compose-completo.yml up -d
+```
 
 ## Nível básico
 
