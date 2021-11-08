@@ -14,9 +14,16 @@
 
 - [Pré-requisitos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#pr%C3%A9-requisitos)
 - [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
-- [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
+  - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
+  - [Otimizar todos os dados do hdfs para uma tabela Hive particionada por município]()
+  - [Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS]()
+  - [Salvar a primeira visualização como tabela Hive]()
+  - [Salvar a segunda visualização com formato parquet e compressão snappy]()
+  - [Salvar a terceira visualização em um tópico no Kafka]()
+  - [Criar a visualização pelo Spark com os dados enviados para o HDFS]()
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
+  - [Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic]()
 
 ## Pré-requisitos
 
@@ -39,14 +46,16 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ### Objetivos
 
-- [x] Preparando o ambiente
-- [x] Enviar os dados para o hdfs
-- [ ] Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
-- [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
-- [ ] Salvar a primeira visualização como tabela Hive
-- [ ] Salvar a segunda visualização com formato parquet e compressão snappy
-- [ ] Salvar a terceira visualização em um tópico no Kafka
-- [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS
+- ✅Preparando o ambiente
+- ✅Enviar os dados para o hdfs
+- ⬜Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
+- ⬜Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
+- ⬜Salvar a primeira visualização como tabela Hive
+- ⬜Salvar a segunda visualização com formato parquet e compressão snappy
+- ⬜Salvar a terceira visualização em um tópico no Kafka
+- ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
+
+### Passo a passo
 
 #### Preparando o ambiente
 
@@ -122,6 +131,26 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 
 
+#### Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
+
+
+
+#### Salvar a primeira visualização como tabela Hive
+
+
+
+#### Salvar a segunda visualização com formato parquet e compressão snappy
+
+
+
+#### Salvar a terceira visualização em um tópico no Kafka
+
+
+
+#### Criar a visualização pelo Spark com os dados enviados para o HDFS
+
+
+
 ------
 
 ## Nível avançado
@@ -140,7 +169,7 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 ### Objetivo
 
-- [ ] Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic.
+- ⬜Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic.
 
 ### Passo a passo
 
