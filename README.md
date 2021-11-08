@@ -18,7 +18,7 @@
   - [Objetivos]()
   - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#passo-a-passo)
     - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
-    - [Enviar os dados para o hdfs](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
+    - [Enviar os dados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
     - [Otimizar todos os dados do hdfs para uma tabela Hive particionada por município](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#otimizar-todos-os-dados-do-hdfs-para-uma-tabela-hive-particionada-por-munic%C3%ADpio)
     - [Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#criar-as-3-vizualiza%C3%A7%C3%B5es-pelo-spark-com-os-dados-enviados-para-o-hdfs)
     - [Salvar a primeira visualização como tabela Hive](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#salvar-a-primeira-visualiza%C3%A7%C3%A3o-como-tabela-hive)
@@ -54,9 +54,8 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 ### Objetivos
 
 - ✅Preparando o ambiente
-- ✅
-- ✅Enviar os dados para o hdfs
-- ⬜Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
+- ✅Enviar os dados para o HDFS
+- ⬜Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
 - ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
 - ⬜Salvar a primeira visualização como tabela Hive
 - ⬜Salvar a segunda visualização com formato parquet e compressão snappy
@@ -82,7 +81,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 No WSL2, crie um diretório para o projeto
 
 ```shell
-mkdir projeto-final-spark
+mkdir projeto-final-spark/
 ```
 
 Acesse o diretório
@@ -110,7 +109,7 @@ docker-compose -f docker-compose-parcial.yml pull
 docker image ls
 ```
 
-#### Enviar os dados para o hdfs
+#### Enviar os dados para o HDFS
 
 No WSL2, baixe o arquivo de dados .rar dentro da pasta spark:
 
@@ -122,7 +121,10 @@ Instale o unrar para descompactar o arquivo .rar
 
 ```shell
 sudo apt install unrar
-unrar x <nome do arquivo>.rar
+unrar x 04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
+
+#Enviar os arquivos .csv para a pasta input
+sudo mv *.csv /home/cicero/projeto-final-spark/spark/input
 ```
 
 Inicie todos os serviços:
@@ -131,7 +133,7 @@ Inicie todos os serviços:
 docker-compose -f docker-compose-parcial.yml up -d
 ```
 
-Envie os dados para o hdfs
+Envie os arquivos para o DFS
 
 ```shell
 #Entre no namenode
@@ -141,7 +143,7 @@ docker exec -it namenode bash
 hdfs dfs -mkdir -p /user/cicero/projeto-final-spark
 
 #Envie o arquivo de dados .rar para a pasta projeto-final-spark no HDFS
-hdfs dfs -put /user/cicero/projeto-final-spark/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /user/cicero/projeto-final-spark
+hdfs dfs -put /input/*.csv /user/cicero/projeto-final-spark
 
 #Confirme se o arquivo foi enviado
 hdfs dfs -ls /user/cicero/projeto-final-spark
