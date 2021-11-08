@@ -18,19 +18,11 @@
 
 ## Tópicos 
 
-```markdown
-[Pré-requisitos](#pré-requisitos)
-
-[Descrição do projeto](#descrição-do-projeto)
-
-[Preparando o ambiente](#preparando-o-ambiente)
-
-[Nível Básico](#nível-básico)
-
-[Nível Avançado](#nível-avançado)
-```
-
-
+- [Pré-requisitos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#pr%C3%A9-requisitos)
+- [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
+- [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
+- [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
+- [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
 
 ------
 
@@ -54,7 +46,7 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ------
 
-## Nível Básico
+## Nível básico
 
 - Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
 - Referência das Visualizações:
@@ -77,7 +69,7 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ------
 
-## Nível Avançado
+## Nível avançado
 
 - Link oficial para todas as informações: https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
 - Informações para se conectar ao cluster: • URL https://imunizacao-es.saude.gov.br/desc-imunizacao • Nome do índice: desc-imunizacao • Credenciais de acesso o Usuário: imunizacao_public o Senha: qlto5t&7r_@+#Tlstigi Links utéis para a resolução do problema:
