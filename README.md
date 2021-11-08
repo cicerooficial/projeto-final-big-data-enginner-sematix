@@ -28,7 +28,27 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ⚠**Observação: Todas as imagens de exemplo abaixo (Visualizações) são apenas para referencias, o projeto irá ter valores diferentes e as formas de se criar tabelas com dataframe/dataset das visualizações, pode ser realizado da maneira que preferir.**
 
-## Preparando o ambiente
+------
+
+## Nível básico
+
+- Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
+- Referência das Visualizações:
+  - Site: https://covid.saude.gov.br/
+  - Guia do Site: Painel Geral
+
+### Objetivos
+
+- [x] Preparando o ambiente
+- [x] Enviar os dados para o hdfs
+- [ ] Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
+- [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
+- [ ] Salvar a primeira visualização como tabela Hive
+- [ ] Salvar a segunda visualização com formato parquet e compressão snappy
+- [ ] Salvar a terceira visualização em um tópico no Kafka
+- [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS
+
+#### Preparando o ambiente
 
 - ⚠[Docker](https://docs.docker.com/get docker/)
 - ⚠[Docker Compose](https://docs.docker.com/compose/install/)
@@ -44,64 +64,38 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 No WSL2, crie um diretório para o projeto
 
-```shell
+```
 mkdir projeto-final-spark
 ```
 
 Acesse o diretório
 
-```shell
+```
 cd projeto-final-spark
 ```
 
 No terminal, clone o projeto: 
 
-``` shell
+```
 git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark
+#Confirme se o arquivo foi baixado
+ls
 ```
 
 Baixe as imagens: 
 
-``` shell
-docker-compose -f docker-compose-parcial.yml pull
 ```
-
-Verifique se as imagens estão sendo listadas: 
-
-```shell
+docker-compose -f docker-compose-parcial.yml pull
+#Verifique se as imagens estão sendo listadas
 docker image ls
 ```
 
-------
+#### Enviar os dados para o hdfs
 
-## Nível básico
-
-- Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
-- Referência das Visualizações:
-  - Site: https://covid.saude.gov.br/
-  - Guia do Site: Painel Geral
-
-### Objetivos
-
-- [ ] Enviar os dados para o hdfs
-
-- [ ] Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
-- [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS ![3-visualizacao-de-dados](C:\Users\cicer\Documents\GitHub\projeto-final-big-data-enginner-sematix\3-visualizacao-de-dados.png)
-- [ ] Salvar a primeira visualização como tabela Hive
-- [ ] Salvar a segunda visualização com formato parquet e compressão snappy
-- [ ] Salvar a terceira visualização em um tópico no Kafka
-- [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS: ![sintese-de-casos-obitos-incidencia-e-mortalidade-por-regiao](C:\Users\cicer\Documents\GitHub\projeto-final-big-data-enginner-sematix\sintese-de-casos-obitos-incidencia-e-mortalidade-por-regiao.png)
-
-### Passo a passo 
-
-Em seu computador, baixe o arquivo de dados .rar através do link https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar.
-
-Se estiver no Windows. No WSL2, copie o arquivo de dados .rar para o linux através do comando cp
+No WSL2, baixe o arquivo de dados .rar dentro da pasta spark:
 
 ```shell
-cp /mnt/c/Users/<usuário>/Downloads/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /home/<usuário>/projeto-final-spark/spark/
-#Verifique se o arquivo está disponível no diretório#
-ls
+curl -O https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
 ```
 
 Entre na pasta spark e inicie todos os serviços:
@@ -111,16 +105,20 @@ cd projeto-final-spark/spark
 docker-compose -f docker-compose-parcial.yml up -d
 ```
 
-Enviar os dados para o hdfs
+Envie os dados para o hdfs
 
 ```shell
 #Entre no namenode
 docker exec -it namenode bash
 #Crie a pasta projeto-final-spark no HDFS para salvar o arquivo de dados .rar
+hdfs dfs -mkdir -p /user/cicero/projeto-final-spark
+#Envie o arquivo de dados .rar para a pasta projeto-final-spark no HDFS
+hdfs dfs -mkdir -p /user/cicero/projeto-final-spark/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /user/cicero/projeto-final-spark
+#Confirme se o arquivo foi enviado
 hdfs dfs -ls /user/cicero/projeto-final-spark
-#Envie o arquivo de dados .rar para o HDFS
-
 ```
+
+#### Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
 
 
 
