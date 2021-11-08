@@ -2,17 +2,13 @@
 
 # Projeto Final Spark: Big Data Enginner
 
-------
-
 <p align="center">
     <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
     <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
     <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" />
     <img src="https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
-     <img src="https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16">
+    <img src="https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16">
 </p>
-
-------
 
 ## Tópicos 
 
@@ -22,13 +18,9 @@
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
 
-------
-
 ## Pré-requisitos
 
 Para melhor compreensão e execução do projeto é requerido ter conhecimentos básicos (fundamentos) em: Big Data, Docker, Python, Kafka, Elastic e Spark. 
-
-------
 
 ## Descrição do projeto
 
@@ -36,13 +28,9 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ⚠**Observação: Todas as imagens de exemplo abaixo (Visualizações) são apenas para referencias, o projeto irá ter valores diferentes e as formas de se criar tabelas com dataframe/dataset das visualizações, pode ser realizado da maneira que preferir.**
 
-------
-
 ## Preparando o ambiente
 
 [Descrever como configurar o cluster utilizando Docker]
-
-------
 
 ## Nível básico
 
@@ -65,8 +53,6 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 [Inserir link da pasta do projeto Nível Básico]
 
-------
-
 ## Nível avançado
 
 - Link oficial para todas as informações: https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
@@ -88,6 +74,4 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 ### Como rodar a aplicação
 
 [Inserir link da pasta do projeto Nível Avançado]
-
-------
 
