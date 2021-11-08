@@ -32,7 +32,7 @@
 
 ## Pré-requisitos
 
-Para melhor compreensão e execução do projeto é requerido ter conhecimentos básicos (fundamentos) em: Big Data, Docker, Python, Kafka, Elastic e Spark. 
+Para melhor compreensão e execução do projeto é necessário conhecimentos básicos (fundamentos) em: Big Data, Docker, Python, Kafka, Elastic e Spark. 
 
 ## Descrição do projeto
 
