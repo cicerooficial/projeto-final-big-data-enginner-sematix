@@ -151,6 +151,14 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 #### Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
 
+Acesse o jupyter-notebook
+
+```shell
+http://localhost:8889/
+```
+
+Abra um arquivo PySpark chamado projeto-final-spark
+
 
 
 #### Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
