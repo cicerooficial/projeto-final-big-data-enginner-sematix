@@ -30,7 +30,41 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 
 ## Preparando o ambiente
 
-[Descrever como configurar o cluster utilizando Docker]
+- ⚠[Docker](https://docs.docker.com/get docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+⚠⚠Instalação Docker - Windows
+
+- Link para instalação do Docker Desktop no **Windows**:
+  - [https://hub.docker.com/editions/community/docker-ce-desktop-windows/ (Links para um site externo.)](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
+- Link de Atualização Windows 10 (20.04):
+  - [https://www.microsoft.com/pt-br/software-download/windows10 (Links para um site externo.)](https://www.microsoft.com/pt-br/software-download/windows10)
+- Download WSL 2:
+  - https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+No WSL2, crie um diretório
+
+`mkdir projeto-final-spark`
+
+Acesse o diretório
+
+`cd projeto-final-spark`
+
+No terminal, clone o projeto: 
+
+`git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark`
+
+Baixe as imagens: 
+
+`docker-compose -f docker-compose-parcial.yml pull`
+
+Verifique se as imagens estão sendo listadas: 
+
+`docker image ls`
+
+Inicie todos os serviços:
+
+`docker-compose -f docker-compose-completo.yml up -d`
 
 ## Nível básico
 
