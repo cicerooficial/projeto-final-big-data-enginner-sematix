@@ -36,7 +36,9 @@ Para melhor compreensão e execução do projeto é necessário conhecimentos b�
 
 ## Descrição do projeto
 
-Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o treinamento de Big Data Enginner promovido pela Semantix Inc no segundo semestre de 2021. O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha Nacional de Vacinação contra Covid-19.
+Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o treinamento de [Big Data Enginner](https://github.com/cicerooficial/big-data-engineer-sematix) promovido pela Semantix Inc no segundo semestre de 2021. 
+
+O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha Nacional de Vacinação contra Covid-19.
 
 ⚠**Observação: Todas as imagens de exemplo abaixo (Visualizações) são apenas para referencias, o projeto irá ter valores diferentes e as formas de se criar tabelas com dataframe/dataset das visualizações, pode ser realizado da maneira que preferir.**
 
@@ -54,7 +56,7 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 - ✅Preparando o ambiente
 - ✅Enviar os dados para o hdfs
 - ⬜Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
-- ⬜Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
+- ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
 - ⬜Salvar a primeira visualização como tabela Hive
 - ⬜Salvar a segunda visualização com formato parquet e compressão snappy
 - ⬜Salvar a terceira visualização em um tópico no Kafka
@@ -136,7 +138,7 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 
 
-#### Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS 
+#### Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
 
 
 
