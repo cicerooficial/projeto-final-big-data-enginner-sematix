@@ -174,5 +174,5 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 ### Passo a passo
 
-Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic
+#### Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic
 
