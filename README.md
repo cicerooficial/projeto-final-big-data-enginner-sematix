@@ -86,11 +86,11 @@ docker image ls
 - [ ] Enviar os dados para o hdfs
 
 - [ ] Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
-- [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS ![](C:\Users\cicer\AppData\Roaming\Typora\typora-user-images\image-20211108112114095.png)
+- [ ] Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS ![3-visualizacao-de-dados](C:\Users\cicer\Documents\GitHub\projeto-final-big-data-enginner-sematix\3-visualizacao-de-dados.png)
 - [ ] Salvar a primeira visualização como tabela Hive
 - [ ] Salvar a segunda visualização com formato parquet e compressão snappy
 - [ ] Salvar a terceira visualização em um tópico no Kafka
-- [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS: ![](C:\Users\cicer\AppData\Roaming\Typora\typora-user-images\image-20211108112158105.png)
+- [ ] Criar a visualização pelo Spark com os dados enviados para o HDFS: ![sintese-de-casos-obitos-incidencia-e-mortalidade-por-regiao](C:\Users\cicer\Documents\GitHub\projeto-final-big-data-enginner-sematix\sintese-de-casos-obitos-incidencia-e-mortalidade-por-regiao.png)
 
 ### Passo a passo 
 
@@ -100,18 +100,25 @@ Se estiver no Windows. No WSL2, copie o arquivo de dados .rar para o linux atrav
 
 ```shell
 cp /mnt/c/Users/<usuário>/Downloads/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar /home/<usuário>/projeto-final-spark/spark/
+#Verifique se o arquivo está disponível no diretório#
+ls
 ```
 
 Entre na pasta spark e inicie todos os serviços:
 
-```
+```shell
 cd projeto-final-spark/spark
 docker-compose -f docker-compose-parcial.yml up -d
 ```
 
 Enviar os dados para o hdfs
 
-```
+```shell
+#Entre no namenode
+docker exec -it namenode bash
+#Crie a pasta projeto-final-spark no HDFS para salvar o arquivo de dados .rar
+hdfs dfs -ls /user/cicero/projeto-final-spark
+#Envie o arquivo de dados .rar para o HDFS
 
 ```
 
