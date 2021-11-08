@@ -31,9 +31,9 @@ Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o tr
 ## Preparando o ambiente
 
 - ⚠[Docker](https://docs.docker.com/get docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+- ⚠[Docker Compose](https://docs.docker.com/compose/install/)
 
-⚠⚠Instalação Docker - Windows
+⚠Instalação Docker - Windows
 
 - Link para instalação do Docker Desktop no **Windows**:
   - [https://hub.docker.com/editions/community/docker-ce-desktop-windows/ (Links para um site externo.)](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
