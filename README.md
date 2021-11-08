@@ -14,8 +14,6 @@
 
 ------
 
-[TOC]
-
 ## Tópicos 
 
 - [Pré-requisitos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#pr%C3%A9-requisitos)
