@@ -14,10 +14,10 @@
 
 - [Pré-requisitos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#pr%C3%A9-requisitos)
 - [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
+- [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
   - [Objetivos]()
   - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#passo-a-passo)
-    - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
     - [Enviar os dados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
     - [Otimizar todos os dados do hdfs para uma tabela Hive particionada por município](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#otimizar-todos-os-dados-do-hdfs-para-uma-tabela-hive-particionada-por-munic%C3%ADpio)
     - [Criar as 3 vizualizações pelo Spark com os dados enviados para o HDFS](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#criar-as-3-vizualiza%C3%A7%C3%B5es-pelo-spark-com-os-dados-enviados-para-o-hdfs)
@@ -44,27 +44,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 
 ------
 
-## Nível básico
-
-- Dados: `https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar`
-- Referência das Visualizações:
-  - Site: `https://covid.saude.gov.br/`
-  - Guia do Site: Painel Geral
-
-### Objetivos
-
-- ✅Preparando o ambiente
-- ✅Enviar os dados para o HDFS
-- ⬜Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
-- ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
-- ⬜Salvar a primeira visualização como tabela Hive
-- ⬜Salvar a segunda visualização com formato parquet e compressão snappy
-- ⬜Salvar a terceira visualização em um tópico no Kafka
-- ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
-
-### Passo a passo
-
-#### Preparando o ambiente
+## Preparando o ambiente
 
 - ⚠[Docker](https://docs.docker.com/get docker/)
 - ⚠[Docker Compose](https://docs.docker.com/compose/install/)
@@ -108,76 +88,28 @@ docker-compose -f docker-compose-parcial.yml pull
 #Verifique se as imagens estão sendo listadas
 docker image ls
 ```
+------
 
-#### Enviar os dados para o HDFS
+## Nível básico
 
-No WSL2, baixe o arquivo de dados .rar dentro da pasta spark:
+- Dados: `https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar`
+- Referência das Visualizações:
+  - Site: `https://covid.saude.gov.br/`
+  - Guia do Site: **Painel Geral**
 
-```shell
-curl -O https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
-```
+### Objetivos
 
-Instale o unrar para descompactar o arquivo .rar 
+- ✅Preparando o ambiente
+- ✅Enviar os dados para o HDFS
+- ⬜Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
+- ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
+- ⬜Salvar a primeira visualização como tabela Hive
+- ⬜Salvar a segunda visualização com formato parquet e compressão snappy
+- ⬜Salvar a terceira visualização em um tópico no Kafka
+- ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
 
-```shell
-sudo apt install unrar
-unrar x 04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
+### Passo a passo
 
-#Enviar os arquivos .csv para a pasta input
-sudo mv *.csv /home/cicero/projeto-final-spark/spark/input
-```
-
-Inicie todos os serviços:
-
-```shell
-docker-compose -f docker-compose-parcial.yml up -d
-```
-
-Envie os arquivos para o DFS
-
-```shell
-#Entre no namenode
-docker exec -it namenode bash
-
-#Crie a pasta projeto-final-spark no HDFS para salvar o arquivo de dados .rar
-hdfs dfs -mkdir -p /user/cicero/projeto-final-spark
-
-#Envie o arquivo de dados .rar para a pasta projeto-final-spark no HDFS
-hdfs dfs -put /input/*.csv /user/cicero/projeto-final-spark
-
-#Confirme se o arquivo foi enviado
-hdfs dfs -ls /user/cicero/projeto-final-spark
-```
-
-#### Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
-
-Acesse o jupyter-notebook
-
-```shell
-http://localhost:8889/
-```
-
-Abra um arquivo PySpark chamado projeto-final-spark
-
-
-
-#### Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
-
-
-
-#### Salvar a primeira visualização como tabela Hive
-
-
-
-#### Salvar a segunda visualização com formato parquet e compressão snappy
-
-
-
-#### Salvar a terceira visualização em um tópico no Kafka
-
-
-
-#### Criar a visualização pelo Spark com os dados enviados para o HDFS
 
 
 
@@ -207,5 +139,7 @@ Abra um arquivo PySpark chamado projeto-final-spark
 
 ### Passo a passo
 
-#### Replicar as visualizações do site “https://covid.saude.gov.br/”, porém acessando diretamente a API de Elastic
+
+
+
 
