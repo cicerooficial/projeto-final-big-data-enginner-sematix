@@ -52,11 +52,11 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 ⚠Instalação Docker - Windows
 
 - Link para instalação do Docker Desktop no **Windows**:
-  - `[https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)`
+  - https://hub.docker.com/editions/community/docker-ce-desktop-windows
 - Link de Atualização Windows 10 (20.04):
-  - `[https://www.microsoft.com/pt-br/software-download/windows10](https://www.microsoft.com/pt-br/software-download/windows10)`
+  - https://www.microsoft.com/pt-br/software-download/windows10
 - Download WSL 2:
-  - `https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi`
+  - https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 No WSL2, crie um diretório para o projeto
 
@@ -92,9 +92,9 @@ docker image ls
 
 ## Nível básico
 
-- Dados: `https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar`
+- Dados: https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar
 - Referência das Visualizações:
-  - Site: `https://covid.saude.gov.br/`
+  - Site: https://covid.saude.gov.br/
   - Guia do Site: **Painel Geral**
 
 ### Objetivos
@@ -119,23 +119,24 @@ docker image ls
 
 - Link oficial para todas as informações: `https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao`
 - Informações para se conectar ao cluster: 
-  - URL `https://imunizacao-es.saude.gov.br/desc-imunizacao`
+  - URL https://imunizacao-es.saude.gov.br/desc-imunizacao
   - Nome do índice: desc-imunizacao
-  - Credenciais de acesso o Usuário: imunizacao_public o Senha: qlto5t&7r_@+#Tlstigi 
+  - Credenciais de acesso o Usuário: imunizacao_public 
+  - Senha: qlto5t&7r_@+#Tlstigi
   - Links utéis para a resolução do problema:
     - Consumo do API:
-      `https://opendatasus.saude.gov.br/dataset/b772ee55-07cd-44d8-958f-b12edd004e0b/resource/5916b3a4-81e7-4ad5-adb6-b884ff198dc1/download/manual_api_vacina_covid-19.pdf`
+      https://opendatasus.saude.gov.br/dataset/b772ee55-07cd-44d8-958f-b12edd004e0b/resource/5916b3a4-81e7-4ad5-adb6-b884ff198dc1/download/manual_api_vacina_covid-19.pdf'
     - Conexão do Spark com Elastic:
-      `https://www.elastic.co/guide/en/elasticsearch/hadoop/current/spark.html`
-      `https://docs.databricks.com/data/data-sources/elasticsearch.html#elasticsearch-notebook`
-      `https://github.com/elastic/elasticsearch-hadoop`
-      `https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html`
+      https://www.elastic.co/guide/en/elasticsearch/hadoop/current/spark.html
+      https://docs.databricks.com/data/data-sources/elasticsearch.html#elasticsearch-notebook
+      https://github.com/elastic/elasticsearch-hadoop
+      https://www.elastic.co/guide/en/elasticsearch/hadoop/current/configuration.html
     - Instalar Dependências:
-      `https://www.elastic.co/guide/en/elasticsearch/hadoop/current/install.html`
+      https://www.elastic.co/guide/en/elasticsearch/hadoop/current/install.html
 
 ### Objetivo
 
-- ⬜Replicar as visualizações do site “`https://covid.saude.gov.br/`”, porém acessando diretamente a API de Elastic.
+- ⬜Replicar as visualizações do site https://covid.saude.gov.br/, porém acessando diretamente a API de Elastic.
 
 ### Passo a passo
 
