@@ -130,7 +130,7 @@ docker image ls
 
 - ⬜Replicar as visualizações do site https://covid.saude.gov.br/, porém acessando diretamente a API de Elastic.
 
-### ▶ [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-avancado.py)
+### ▶ [Passo a passo]()
 
 
 
