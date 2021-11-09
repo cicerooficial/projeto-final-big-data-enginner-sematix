@@ -16,11 +16,11 @@
 - [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
 - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
-  - [Objetivos]()
-  - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#passo-a-passo)
+  - [Objetivos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivos)
+  - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-passo-a-passo)
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
-  - [Objetivos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivo)
-  - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#passo-a-passo-1)
+  - [Objetivo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivo)
+  - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-passo-a-passo-1)
 
 ## Pré-requisitos
 
