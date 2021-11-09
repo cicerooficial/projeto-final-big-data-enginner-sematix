@@ -47,10 +47,10 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 - [Link de Atualização Windows 10 (20.04)](https://www.microsoft.com/pt-br/software-download/windows10)
 - [Download WSL 2](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-No WSL2, crie um diretório para o projeto
+Pelo terminal do WSL2, crie um diretório para o projeto
 
 ```shell
-mkdir projeto-final-spark/
+mkdir projeto-final-spark
 ```
 
 Acesse o diretório
@@ -59,7 +59,7 @@ Acesse o diretório
 cd projeto-final-spark
 ```
 
-No terminal, clone o projeto: 
+No diretório spark, clone o projeto: 
 
 ```shell
 git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark
@@ -71,7 +71,7 @@ ls
 Entra na pasta spark e baixe as imagens: 
 
 ```shell
-cd projeto-final-spark/spark
+cd spark
 docker-compose -f docker-compose-parcial.yml pull
 
 #Verifique se as imagens estão sendo listadas
@@ -97,7 +97,7 @@ docker image ls
 - ⬜Salvar a terceira visualização em um tópico no Kafka
 - ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
 
-### ▶ [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-basico.py)
+### ▶ [Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-basico.py)
 
 
 ------
