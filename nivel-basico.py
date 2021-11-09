@@ -1,4 +1,4 @@
-# Enviar os dados para o HDFS
+#### Enviar os dados para o HDFS
 
 # No WSL2, baixe o arquivo de dados .rar dentro da pasta spark:
 
@@ -25,7 +25,7 @@ sudo mv *.csv /home/cicero/projeto-final-spark/spark/input
 docker-compose -f docker-compose-parcial.yml up -d
 ```
 
-# Envie os arquivos para o DFS
+# Envie os arquivos .CSV para o HDFS
 ```shell
 #Entre no namenode
 docker exec -it namenode bash
@@ -47,13 +47,8 @@ hdfs dfs -ls /user/cicero/projeto-final-spark
 
 #### Otimizar todos os dados do hdfs para uma tabela Hive particionada por município
 
-#Acesse o jupyter-notebook
-
-```shell
+#Acesse o jupyter-notebook pelo navegador e abra um arquivo PySpark e renomeie para projeto-final-spark
 http://localhost:8889/
-```
-
-#Abra um arquivo PySpark chamado projeto-final-spark
 
 # Acesse os arquivos .CSV pelo HDFS
 !hdfs dfs -ls "hdfs:///user/cicero/projeto-final-spark/"
@@ -62,28 +57,27 @@ http://localhost:8889/
 
 
 
-
 ------
 
-# Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
-
-
-------
-
-# Salvar a primeira visualização como tabela Hive
+#### Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
 
 
 ------
 
-# Salvar a segunda visualização com formato parquet e compressão snappy
+#### Salvar a primeira visualização como tabela Hive
 
 
 ------
 
-# Salvar a terceira visualização em um tópico no Kafka
+#### Salvar a segunda visualização com formato parquet e compressão snappy
 
 
 ------
 
-# Criar a visualização pelo Spark com os dados enviados para o HDFS
+#### Salvar a terceira visualização em um tópico no Kafka
+
+
+------
+
+#### Criar a visualização pelo Spark com os dados enviados para o HDFS
 
