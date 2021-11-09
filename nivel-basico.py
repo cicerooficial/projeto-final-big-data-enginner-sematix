@@ -54,7 +54,56 @@ http://localhost:8889/
 !hdfs dfs -ls "hdfs:///user/cicero/projeto-final-spark/"
 
 
+#Importe as bibliotecas necessárias
+from pyspark.sql import *
+from pyspark.sql.types import *
 
+#Acesse os arquivos pelo HDFS
+!hdfs dfs -ls "hdfs:///user/cicero/projeto-final-spark/"
+
+#Acessar os arquivos e mostrar a primeira linha 
+rdd = sc.textFile("hdfs:///user/cicero/projeto-final-spark/")
+rdd.first()
+
+#Mostrar as primieras linhas para entender os dados
+rdd.take(200)
+
+'''
+#Criar um Data Frame com Schema organizado.
+colunas_painel_covidbr = [ StructField("regiao", StringType()),
+                          StructField("estado", StringType()),
+                          StructField("municipio", StringType()),
+                          StructField("coduf", StringType()),
+                          StructField("codmun", StringType()),
+                          StructField("codRegiaoSaude", StringType()),
+                          StructField("nomeRegiaoSaude", StringType()),
+                          StructField("data", DateType()),
+                          StructField("semanaEpi", StringType()),
+                          StructField("populacaoTCU2019", IntegerType()),
+                          StructField("casosAcumulado", IntegerType()),
+                          StructField("casosNovos", IntegerType()),
+                          StructField("obitosAcumulado", IntegerType()),
+                          StructField("obitosNovos", IntegerType()),
+                          StructField("Recuperadosnovos", IntegerType()),
+                          StructField("emAcompanhamentoNovos", IntegerType()),
+                          StructField("interior/metropolitana", IntegerType())]
+
+schema = StructType(colunas_painel_covidbr)
+df_painel_covidbr = spark.read.option("header","true").option("delimiter",";").csv("hdfs:///user/cicero/projeto-final-spark/")
+'''
+
+#Utilizando o option("inferSchema","true") para que automaticamente o spark identifique os tipos de dados das colunas
+df_painel_covidbr = spark.read.option("sep",";").option("header","true").option("inferSchema","true").csv("hdfs:///user/cicero/projeto-final-spark/")
+
+#Visualize o schema
+df_painel_covidbr.printSchema()
+df_painel_covidbr.head()
+
+df_painel_covidbr.show(5, vertical=True)
+
+#Inserindo os dados no Apache Hive
+
+#Separando os dados por municípios
 
 
 ------
@@ -81,3 +130,10 @@ http://localhost:8889/
 
 #### Criar a visualização pelo Spark com os dados enviados para o HDFS
 
+'''
+Fontes de ajuda:
+
+Spark Read CSV file into DataFrame: https://sparkbyexamples.com/spark/spark-read-csv-file-into-dataframe/
+
+
+'''
