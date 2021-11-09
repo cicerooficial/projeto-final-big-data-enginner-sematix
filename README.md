@@ -51,12 +51,9 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 
 ⚠Instalação Docker - Windows
 
-- Link para instalação do Docker Desktop no **Windows**:
-  - https://hub.docker.com/editions/community/docker-ce-desktop-windows
-- Link de Atualização Windows 10 (20.04):
-  - https://www.microsoft.com/pt-br/software-download/windows10
-- Download WSL 2:
-  - https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+- [Link para instalação do Docker Desktop no **Windows**](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+- [Link de Atualização Windows 10 (20.04)](https://www.microsoft.com/pt-br/software-download/windows10)
+- [Download WSL 2](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
 No WSL2, crie um diretório para o projeto
 
@@ -108,9 +105,7 @@ docker image ls
 - ⬜Salvar a terceira visualização em um tópico no Kafka
 - ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
 
-### Passo a passo
-
-
+### ▶[Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-basico.py)
 
 
 ------
@@ -138,7 +133,7 @@ docker image ls
 
 - ⬜Replicar as visualizações do site https://covid.saude.gov.br/, porém acessando diretamente a API de Elastic.
 
-### Passo a passo
+### ▶[Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-avancado.py)
 
 
 
