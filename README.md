@@ -2,6 +2,11 @@
 
 # Projeto Final Spark: Big Data Enginner
 
+- Nome: Cícero Henrique dos Santos
+- Instituição: Semantix Academy
+- Turma: Big Data Engineer 08-21
+- Professor: Rodrigo Rebouças
+
 <p align="center">
     <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
     <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
@@ -97,7 +102,7 @@ docker image ls
 - ⬜Salvar a terceira visualização em um tópico no Kafka
 - ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
 
-### ▶ [Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/nivel-basico.py)
+### ▶ [Acesse aqui o Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/projeto_final_spark_nivel_basico.ipynb)
 
 
 ------
