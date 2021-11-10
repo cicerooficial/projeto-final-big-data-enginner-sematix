@@ -22,7 +22,7 @@
 - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
   - [Objetivos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivos)
-  - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-passo-a-passo)
+  - [Projeto Final Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-projeto-final--spark---nivel-b%C3%A1sico)
 - [Nível avançado](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-avan%C3%A7ado)
   - [Objetivo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivo)
   - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-passo-a-passo-1)
@@ -63,7 +63,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 - ⬜Salvar a terceira visualização em um tópico no Kafka
 - ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
 
-### ▶ [Acesse aqui o Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/projeto_final_spark_nivel_basico.ipynb)
+### ▶ [Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/projeto_final_spark_nivel_basico.ipynb)
 
 
 ------
