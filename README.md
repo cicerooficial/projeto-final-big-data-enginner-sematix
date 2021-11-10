@@ -27,9 +27,13 @@
   - [Objetivo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivo)
   - [Passo a passo](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-passo-a-passo-1)
 
+------
+
 ## Pré-requisitos
 
 Para melhor compreensão e execução do projeto é necessário conhecimentos básicos (fundamentos) em: Big Data, Docker, Python, Kafka, Elastic e Spark. 
+
+------
 
 ## Descrição do projeto
 
@@ -39,49 +43,6 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 
 ⚠**Observação: Todas as imagens de exemplo abaixo (Visualizações) são apenas para referencias, o projeto irá ter valores diferentes e as formas de se criar tabelas com dataframe/dataset das visualizações, pode ser realizado da maneira que preferir.**
 
-------
-
-## Preparando o ambiente
-
-- ⚠[Docker](https://docs.docker.com/get docker/)
-- ⚠[Docker Compose](https://docs.docker.com/compose/install/)
-
-⚠Instalação Docker - Windows
-
-- [Link para instalação do Docker Desktop no **Windows**](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Link de Atualização Windows 10 (20.04)](https://www.microsoft.com/pt-br/software-download/windows10)
-- [Download WSL 2](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-
-Pelo terminal do WSL2, crie um diretório para o projeto
-
-```shell
-mkdir projeto-final-spark
-```
-
-Acesse o diretório
-
-```shell
-cd projeto-final-spark
-```
-
-No diretório spark, clone o projeto: 
-
-```shell
-git clone https://github.com/rodrigo-reboucas/docker-bigdata.git spark
-
-#Confirme se o arquivo foi baixado
-ls
-```
-
-Entra na pasta spark e baixe as imagens: 
-
-```shell
-cd spark
-docker-compose -f docker-compose-parcial.yml pull
-
-#Verifique se as imagens estão sendo listadas
-docker image ls
-```
 ------
 
 ## Nível básico
