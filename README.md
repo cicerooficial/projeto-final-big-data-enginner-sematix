@@ -37,7 +37,7 @@ Para melhor compreensão e execução do projeto é necessário conhecimentos b�
 
 ## Descrição do projeto
 
-Esse projeto tem como objetivo promover os conhecimentos adquiridos durante o treinamento de [Big Data Enginner](https://github.com/cicerooficial/big-data-engineer-sematix) promovido pela Semantix Inc no segundo semestre de 2021. 
+Esse projeto tem como objetivo desenvolver os conhecimentos adquiridos durante o treinamento de [Big Data Enginner](https://github.com/cicerooficial/big-data-engineer-sematix) promovido pela Semantix Inc no segundo semestre de 2021. 
 
 O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha Nacional de Vacinação contra Covid-19.
 
