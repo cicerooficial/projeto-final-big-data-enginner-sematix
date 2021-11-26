@@ -1,4 +1,4 @@
-# <img align="center" src="https://semantix.com.br/wp-content/uploads/2021/03/smtx-logo-white.png" alt="Logo Semantix Inc." style="zoom:100%;" />
+<img align="center" src="https://semantix.com.br/wp-content/uploads/2021/03/smtx-logo-white.png" alt="Logo Semantix Inc." style="zoom:100%;" />
 
 # Projeto Final Spark: Big Data Enginner
 
@@ -9,11 +9,12 @@
 
 <p align="center">
     <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
-    <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" />
-    <img src="https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white">
-    <img src="https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16">
+    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Hadoop-FFFFFF?style=for-the-badge&logo=hadoop&logoColor=#E35A16"/>
+    <img src="https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16"/>
+	<img src="https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white"/>
 </p>
+
 
 ## Tópicos 
 
@@ -70,7 +71,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 
 ## Nível avançado
 
-- Link oficial para todas as informações: `https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao`
+- Link oficial para todas as informações: https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao
 - Informações para se conectar ao cluster: 
   - URL https://imunizacao-es.saude.gov.br/desc-imunizacao
   - Nome do índice: desc-imunizacao
@@ -91,7 +92,7 @@ O projeto é dividido em duas partes (básico e avançado) sobre o tema Campanha
 
 - ⬜Replicar as visualizações do site https://covid.saude.gov.br/, porém acessando diretamente a API de Elastic.
 
-### ▶ [Passo a passo]()
+### ▶ [Projeto Final Spark - Nivel Avançado]()
 
 
 
