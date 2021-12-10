@@ -101,23 +101,9 @@ Obs.: Cuidado para não iniciar o cluster completo (docker-compose-completo.yml)
     1. Faça downlod do arquivo .jar com o comando `curl -O https://repo1.maven.org/maven2/com/twitter/parquet-hadoop-bundle/1.6.0/parquet-hadoop-bundle-1.6.0.jar`
     2. Copie o arquivo para o diretório `/opt/spark/jars` com o comando `docker cp parquet-hadoop-bundle-1.6.0.jar jupyter-spark:/opt/spark/jars`
 
-----------
-# Enviar os dados para o HDFS
-1.  Pelo terminal do WSL2, dentro da pasta spark, baixe o arquivo de dados .rar dentro da pasta spark: 
-`sudo curl -O https://mobileapps.saude.gov.br/esus-vepi/files/unAFkcaNDeXajurGB7LChj8SgQYS2ptm/04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar`.
-Obs.: Caso o link veia a ficar inacessível, o arquivo está disponibilizado no diretório [data]() dentro dessa pasta.
-2. Instale o unrar para descompactar o arquivo .rar com o comando: `sudo apt install unrar`
-3. Descompacte o arquivo .rar com o comando: `sudo unrar x 04bd3419b22b9cc5c6efac2c6528100d_HIST_PAINEL_COVIDBR_06jul2021.rar`
-4. Crie um diretório input dentro da pasta spark: `mkdir input`
-5. Envie os arquivos .csv para a pasta input: `sudo mv *.csv /home/cicero/projeto-final-spark/spark/input`
-6. Acesse o namenode utilizando o comando `docker exec -it namenode bash`.
-7. Crie a pasta projeto-final-spark no HDFS para salvar os arquivos de dados .CSV: `hdfs dfs -mkdir -p /user/cicero/projeto-final-spark`
-8. Envie oo arquivos de dados .CSV para a pasta projeto-final-spark no HDFS:
- `hdfs dfs -put /input/*.csv /user/cicero/projeto-final-spark`
-9. Confirme se os arquivos foram enviados: `hdfs dfs -ls /user/cicero/projeto-final-spark`
-
-Pronto, sua máquina está configurada e os arquivos prontos para serem utilizados no HDFS. Continua os próximos passos pelo Jupyter-Notebook acessando pelo navegador a porta `http://localhost:8889/`. 
-Depois crie um arquivo chamado projeto_final_spark_nivel_basico. Neste arquivo que seguiremos com os próximos passos.
+Agora sua máquina está configurada e seus arquivos estão prontos para serem utilizados no HDFS.
+Continue os próximos passos pelo Jupyter-Notebook acessando pelo navegador a porta `http://localhost:8889/`. 
+Depois crie um arquivo de tipo PySpark chamado projeto_final_spark_nivel_basico. Neste arquivo continuaremos com os próximos passos utilizando PySpark.
 
 ----------
 
@@ -130,8 +116,6 @@ Depois crie um arquivo chamado projeto_final_spark_nivel_basico. Neste arquivo q
 
 ### Objetivos
 
-- ✅Configurando o Docker em sua máquina
-- ✅Preparando o ambiente
 - ✅Enviar os dados para o HDFS
 - ⬜Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
 - ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
@@ -142,8 +126,7 @@ Depois crie um arquivo chamado projeto_final_spark_nivel_basico. Neste arquivo q
 
 ### ▶ [Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/projeto_final_spark_nivel_basico.ipynb)
 
-
-------
+----------
 
 ## Nível avançado
 
