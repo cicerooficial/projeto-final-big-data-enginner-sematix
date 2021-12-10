@@ -117,7 +117,7 @@ Depois crie um arquivo de tipo PySpark chamado projeto_final_spark_nivel_basico.
 ### Objetivos
 
 - ✅Enviar os dados para o HDFS
-- ⬜Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
+- ✅Otimizar todos os dados do HDFS para uma tabela Hive particionada por município
 - ⬜Criar as 3 visualizações pelo Spark com os dados enviados para o HDFS 
 - ⬜Salvar a primeira visualização como tabela Hive
 - ⬜Salvar a segunda visualização com formato parquet e compressão snappy
