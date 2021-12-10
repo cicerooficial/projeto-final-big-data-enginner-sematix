@@ -21,7 +21,6 @@
 - [Descrição do projeto](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#descri%C3%A7%C3%A3o-do-projeto)
 - [Configurando o Docker em sua máquina]()
 - [Preparando o ambiente](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#preparando-o-ambiente)
-- [Enviar os dados para o HDFS]()
 - [Nível básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#n%C3%ADvel-b%C3%A1sico)
   - [Objetivos](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#objetivos)
   - [Projeto Final Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#-projeto-final--spark---nivel-b%C3%A1sico)
