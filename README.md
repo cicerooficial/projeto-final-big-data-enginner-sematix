@@ -121,9 +121,9 @@ Depois crie um arquivo de tipo PySpark chamado projeto_final_spark_nivel_basico.
 - ✅Salvar a primeira visualização como tabela Hive
 - ✅Salvar a segunda visualização com formato parquet e compressão snappy
 - ✅Salvar a terceira visualização em um tópico no Kafka
-- ⬜Criar a visualização pelo Spark com os dados enviados para o HDFS
-- Salvar a visualização do exercício 6 em um tópico no Elastic
-- Criar um dashboard no Elastic para visualização dos novos dados enviados
+- ✅Criar a visualização pelo Spark com os dados enviados para o HDFS
+- ⬜Salvar a visualização do exercício 6 em um tópico no Elastic
+- ⬜Criar um dashboard no Elastic para visualização dos novos dados enviados
 
 ### ▶ [Projeto Final  Spark - Nivel básico](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix/blob/main/projeto_final_spark_nivel_basico.ipynb)
 
