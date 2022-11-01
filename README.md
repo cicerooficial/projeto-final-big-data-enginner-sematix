@@ -1,4 +1,4 @@
-<img align="center" src="https://semantix.com.br/wp-content/uploads/2021/03/smtx-logo-white.png" alt="Logo Semantix Inc." style="zoom:100%;" />
+<img align="center" src="./logo-semantix.png" alt="Logo Semantix Inc." style="zoom:100%;" />
 
 # Projeto Final Spark: Big Data Enginner
 
