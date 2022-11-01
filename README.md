@@ -5,7 +5,7 @@
 # Projeto Final Spark: Big Data Enginner
 
 <p align="center">
-    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/STATUS-EM DESENVOLVIMENTO-76B900?style=for-the-badge&logoColor=white"/>
     <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
     <img src="https://img.shields.io/badge/Hadoop-FFFFFF?style=for-the-badge&logo=hadoop&logoColor=#E35A16"/>
     <img src="https://img.shields.io/badge/Apache_Spark-FFFFFF?style=for-the-badge&logo=apachespark&logoColor=#E35A16"/>
