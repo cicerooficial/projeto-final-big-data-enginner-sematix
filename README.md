@@ -1,4 +1,6 @@
-<img align="center" src="./logo-semantix.png" alt="Logo Semantix Inc." style="zoom:100%;" />
+<p align="middle">
+    <img src="./logo-semantix.png" alt="Logo Semantix Inc." style="zoom:50%;" />
+</p>
 
 # Projeto Final Spark: Big Data Enginner
 
